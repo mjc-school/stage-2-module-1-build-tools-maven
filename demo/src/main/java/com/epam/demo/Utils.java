@@ -6,11 +6,8 @@ public class Utils {
     public static boolean isAllPositiveNumbers(List<String> args) {
 
         for(String argument: args){
-           if (StringUtils.isPositiveNumber(argument)){
-               continue;
-           }
-           else {
-               return  false;
+           if (StringUtils.isPositiveNumber(argument) != true){
+               return false;
            }
         }
         return  true;
